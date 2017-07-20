@@ -20,11 +20,12 @@
     "webpack": "^1.12.2"
   },
   "scripts": {
-    "install:dependency": "npm install -g webpack webpack-dev-server",
-    "development": "copy D:\\Nain\\my-projects\\nain-blog\\views D:\\Nain\\my-projects\\nain-blog\\public\\index.html && SET NODE_ENV=development webpack && webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback",
-    "delete": "del D:\\Nain\\my-projects\\nain-blog\\public\\index.html",
+    "start": "npm run production",
     "production": "SET NODE_ENV=production && webpack -p && node app.js",
-    "start": "npm run production"
+    "webpack-dev-server": "SET NODE_ENV=development PORT=8080 webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback",
+    "development": "copy D:\\Nain\\my-projects\\nain-blog\\views D:\\Nain\\my-projects\\nain-blog\\public\\index.html && SET NODE_ENV=development webpack && npm run webpack-dev-server",
+    "delete": "del D:\\Nain\\my-projects\\nain-blog\\public\\index.html",
+    "install:dependency": "npm install -g webpack webpack-dev-server"
   },
   "author": "Nain Luans",
   "license": "ISC",

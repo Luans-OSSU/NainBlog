@@ -3,7 +3,7 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import AppStore from '../stores/AppStore';
 
 import Nav from './Partials/Nav';
-import Footer from './Partials/Foooter';
+import Footer from './Partials/Footer';
 import Loading from './Partials/Loading';
 
 
